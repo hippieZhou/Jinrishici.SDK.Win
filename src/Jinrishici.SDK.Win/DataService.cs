@@ -1,15 +1,11 @@
 ﻿using Jinrishici.SDK.Win.Models;
 using Jinrishici.SDK.Win.Utils;
-using Newtonsoft.Json;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Jinrishici.SDK.Win
 {
-    /// <summary>
-    /// https://www.jinrishici.com/doc/
-    /// </summary>
     public interface IDataService
     {
         Task GetTokenAsync(Action<PoetyToken, Exception> action);
